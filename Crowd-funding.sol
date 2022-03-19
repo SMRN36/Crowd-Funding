@@ -23,7 +23,7 @@ contract CrowdFunding{
     uint public numRequests;
     constructor(uint _target,uint _deadline){
         target=_target;
-        deadline=block.timestamp+_deadline; //10sec + 3600sec (60*60)
+        deadline=block.timestamp+_deadline; 
         minContribution=100 wei;
         manager=msg.sender;
     }
